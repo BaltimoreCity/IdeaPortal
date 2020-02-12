@@ -17,7 +17,7 @@
               <ul class="mp-none">
                 <li class='<%= tab_selected(@conn, "challenges") %>'>
                   <%= link(to: Routes.challenge_path(@conn, :index)) do %>
-                    <i class="icon-Challenges"></i><span>Challenges</span>
+                    <i class="icon-Ideas"></i><span>Challenges</span>
                   <% end %>
                 </li>
                 <li class='<%= tab_selected(@conn, "accounts") %>'>
