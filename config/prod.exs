@@ -17,6 +17,7 @@ config :idea_portal, Web.Endpoint,
   secret_key_base: System.get_env("SECRET_KEY_BASE")
 
 config :idea_portal, IdeaPortal.Repo,
+  ssl: true,
   url: System.get_env("DATABASE_URL"),
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "15")
 
